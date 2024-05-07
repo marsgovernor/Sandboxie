@@ -159,7 +159,7 @@ jobs:
           retention-days: 60
 
       - name: Upload Sandboxie x64
-        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+      #  if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
         uses: actions/upload-artifact@v4
         with:
           name: Sandboxie_x64
